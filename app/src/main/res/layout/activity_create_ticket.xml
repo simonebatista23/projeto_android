@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="16dp"
+    tools:context=".CreateTicketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo Chamado"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333"
+            android:paddingBottom="24dp" />
+
+        <!-- Campo Descrição -->
+        <EditText
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título do problema"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Campo Corpo -->
+        <EditText
+            android:id="@+id/edtBody"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:hint="Descreva o problema detalhadamente..."
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Spinner de Departamentos -->
+        <Spinner
+            android:id="@+id/spnDept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botão Selecionar Arquivo -->
+        <Button
+            android:id="@+id/btnSelectFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar arquivo"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFF" />
+
+        <!-- Texto com nome do arquivo selecionado -->
+        <TextView
+            android:id="@+id/txtSelectedFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nenhum arquivo selecionado"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão Criar Chamado -->
+        <Button
+            android:id="@+id/btnCreateTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar chamado"
+            android:textAllCaps="false"
+            android:backgroundTint="#43A047"
+            android:textColor="#FFF"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

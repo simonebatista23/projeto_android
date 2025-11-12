@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChamadoSuport</string>
+
+    <!-- Texto usado no Spinner do departamento -->
+    <string name="select_department">Selecione o departamento</string>
+
+    <!-- Lista de prioridades -->
+    <string-array name="priority_levels">
+        <item>Baixa</item>
+        <item>Média</item>
+        <item>Alta</item>
+    </string-array>
+
+    <!-- Strings individuais (se quiser usar em outros lugares) -->
+    <string name="priority_low">Baixa</string>
+    <string name="priority_medium">Média</string>
+    <string name="priority_high">Alta</string>
+</resources>

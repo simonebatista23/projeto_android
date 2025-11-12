@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F4F6F9"
+    android:padding="32dp">
+
+    <!-- Card do Login -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="8dp"
+        android:clipToOutline="true"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="#FFFFFF">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:elevation="1dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#CBD5E1" />
+
+        <!-- Campo Senha -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:elevation="1dp"
+            android:backgroundTint="#CBD5E1" />
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/chkRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lembrar login"
+            android:textColor="#475569"
+            android:layout_marginTop="12dp" />
+
+        <!-- Botão -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="3dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
